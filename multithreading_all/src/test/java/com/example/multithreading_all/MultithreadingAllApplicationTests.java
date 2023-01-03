@@ -1,13 +1,13 @@
-package com.example.java_advanced;
+package com.example.multithreading_all;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class JavaAdvancedApplicationTests {
+class MultithreadingAllApplicationTests {
 
-    @Test
-    void contextLoads() {
-    }
+	@Test
+	void contextLoads() {
+	}
 
 }
