@@ -1,5 +1,7 @@
 package com.example.multithreading_all.common.lock;
 
+import lombok.Data;
+
 /**
  * module: 应用模块名称<br/>
  * <p>
@@ -8,6 +10,7 @@ package com.example.multithreading_all.common.lock;
  * @author XiaoDong.Yang
  * @date: 2023/1/17 14:55
  */
+@Data
 public class RedisLockDefinitionHolder {
 
     /**

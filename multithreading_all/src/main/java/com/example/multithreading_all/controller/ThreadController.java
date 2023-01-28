@@ -1,5 +1,7 @@
 package com.example.multithreading_all.controller;
 
+import com.example.multithreading_all.common.aop.RedisLockAnnotation;
+import com.example.multithreading_all.common.enums.RedisLockTypeEnum;
 import com.example.multithreading_all.service.ThreadService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,6 +25,7 @@ public class ThreadController  {
     private ThreadService threadService;
 
     @GetMapping("/thread")
+    @RedisLockAnnotation(typeEnum = RedisLockTypeEnum.ONE, lockTime = 3)
     public void getThread(@RequestParam("count") Integer count) {
          threadService.getThread(count);
     }

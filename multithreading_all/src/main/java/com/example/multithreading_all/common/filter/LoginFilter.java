@@ -14,7 +14,7 @@ import java.util.logging.LogRecord;
  * @author XiaoDong.Yang
  * @date: 2023/1/12 15:27
  */
-@WebFilter(filterName = "FirstFilter",urlPatterns = "/first")
+// @WebFilter(filterName = "FirstFilter",urlPatterns = "/first")
 public class LoginFilter implements Filter {
 
     public boolean isLoggable(LogRecord record) {
