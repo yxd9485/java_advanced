@@ -1,3 +1,25 @@
+spring:
+  rabbitmq:
+    addresses: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+    connection-timeout: 15000ms
+    publisher-confirm-type: correlated
+    publisher-returns: true  #开启发送失败回退
+    listener:
+      simple:
+        default-requeue-rejected: false #关闭异常循环
+        acknowledge-mode: manual #采取手动应答
+        retry:
+          enabled: true # 是否支持重试
+          max-attempts: 5 #最大重试次数
+          initial-interval: 5000ms #重试间隔时间（单位毫秒）
+          max-interval: 1200000ms #重试最大时间间隔（单位毫秒）
+          multiplier: 2 #间隔时间乘子，间隔时间*乘子=下一次的间隔时间，最大不能超过设置的最大间隔时间
+
+
 nacos:
   config:
     data-id: LEARN_DEV
