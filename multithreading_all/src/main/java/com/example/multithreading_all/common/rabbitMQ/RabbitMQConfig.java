@@ -1,4 +1,4 @@
-package com.example.multithreading_all.common;
+package com.example.multithreading_all.common.rabbitMQ;
 
 import org.springframework.amqp.core.*;
 import org.springframework.beans.factory.annotation.Qualifier;

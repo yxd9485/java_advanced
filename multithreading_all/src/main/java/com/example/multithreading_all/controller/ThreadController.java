@@ -22,23 +22,23 @@ import org.springframework.web.bind.annotation.RestController;
  * @author XiaoDong.Yang
  * @date: 2023/1/4 11:11
  */
-@RestController
+/*@RestController
 @RequestMapping("/java")
 @Slf4j
 @Aspect
-@Component
+@Component*/
 public class ThreadController  {
 
-    @Autowired
+    /*@Autowired*/
     private ThreadService threadService;
 
-    @Value("${spring.redis.password}")
+    /*@Value("${spring.redis.password}")*/
     public String pass;
 
-    @GetMapping("/thread")
+/*    @GetMapping("/thread")*/
   //  @RedisLockAnnotation(typeEnum = RedisLockTypeEnum.ONE, lockTime = 3)
     public void getThread(@RequestParam("count") Integer count) {
-        log.info("--------------->nacos {}",pass);
+    //    log.info("--------------->nacos {}",pass);
         threadService.getThread(count);
     }
 
