@@ -26,7 +26,7 @@ public class RabbitMQConfig {
     public static final String COMMON_QUEUE_NAME = "common_queue_advanced";
 
     // 死信队列
-    public static final String DEAD_QUEUE_NAME = "dead_queue_advanced";
+    public static final String  DEAD_QUEUE_NAME = "dead_queue_advanced";
 
 
     @Bean
