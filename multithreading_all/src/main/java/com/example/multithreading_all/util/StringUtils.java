@@ -209,14 +209,23 @@ public class StringUtils {
 
     public static void main(String[] args) {
         List<String> objects = Lists.newArrayList();
-        objects.add("aaaaa");
-        objects.add("bbbbbb");
-        objects.contains("aaaaa");
+        objects.add(null);
+        objects.add(null);
+        for (int i = 0;i<20;i++) {
+            if (i==10) {
 
-        System.out.println(UUID.randomUUID().toString());
+                break;
+            }
+
+            System.out.println(i);
+
+        }
 
 
-        System.out.println(objects.contains("aaaaa"));
+      //  System.out.println(UUID.randomUUID().toString());
+
+
+        System.out.println(objects.size());
     }
 
 
